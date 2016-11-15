@@ -1,0 +1,23 @@
+<ion-view view-title="Inicio de Sesion">
+<ion-content class="padding">
+  <div class="card">
+    <div class="item item-text-wrap">
+      Para iniciar sesión por favor ingresar los siguientes datos:
+    </div>
+  </div>
+   <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nombre de Usuario</span>
+        <input type="text" ng-model="username" placeholder="John">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Contraseña</span>
+        <input type="password" ng-model="password" placeholder="Contraseña">
+      </label>
+     
+    <button class="button button-block button-positive" ng-click="login()">
+      Iniciar Sesión
+    </button>
+  </div>
+ </ion-content>   
+</ion-view>
