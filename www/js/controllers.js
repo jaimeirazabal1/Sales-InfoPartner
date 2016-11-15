@@ -16,7 +16,9 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   };
 })
-.controller('LoginCtrl',function($scope,$stateParams,$ionicPopup){
+.controller('LoginCtrl',function($scope,$stateParams,$ionicPopup,$state){
+  var $state = $state;
+  $scope.titulo = "Inicio de Sesión";
   $scope.login = function(){
     console.log(this.username,this.password)
     if (this.username == "jaime" && this.password == "1234") {
@@ -28,6 +30,7 @@ angular.module('starter.controllers', [])
        });
 
        alertPopup.then(function(res) {
+        $state.go("dash"); 
          console.log('Thank you for not eating my delicious ice cream cone');
        });
     }else{
@@ -43,8 +46,12 @@ angular.module('starter.controllers', [])
     }
   }
 })
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
+.controller('DashCtrl', function($scope, $stateParams, Chats) {
+  $scope.titulo = "Tablero";
+  $scope.usuario = {
+    nombre : "Jaime Irazabal",
+    pedidos : 6
+  }
 })
 
 .controller('AccountCtrl', function($scope) {

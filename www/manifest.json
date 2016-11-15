@@ -1,11 +1,11 @@
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "Sales InfoPartner",
+  "short_name": "Sales InfoPartner",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "icon.png",
-    "sizes": "512x512",
+    "src": "logo2.png",
+    "sizes": "557x450",
     "type": "image/png"
   }]
 }

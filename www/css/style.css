@@ -1,1 +1,26 @@
 /* Empty. Add your own CSS if you like */
+.header_logo{
+	padding-top: 30px;
+}
+.letra_azul{
+	color:#0a9dc7;
+}
+.title-image{
+	width: 120px;
+}
+.title_text_header h2{
+	color:#0a9dc7;
+}
+.header_logo{
+	height: 150px;
+}
+.pane{
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+}
+.col_menu{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}

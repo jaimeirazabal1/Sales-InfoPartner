@@ -7,7 +7,7 @@ var db = null;
 // 'starter.controllers' is found in controllers.js
 var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services']);
 
-app.run(function($ionicPlatform,$cordovaSQLite) {
+app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -53,7 +53,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
     controller: 'LoginCtrl'
 
   })
+    .state('dash', {
+    url: '/dash',
+    templateUrl: 'templates/dash.html',
+    controller: 'DashCtrl'
 
+  })
   // Each tab has its own nav history stack:
 
  /* .state('tab.dash', {
