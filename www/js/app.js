@@ -7,7 +7,7 @@ var db = null;
 // 'starter.controllers' is found in controllers.js
 var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services']);
 
-app.run(function($ionicPlatform) {
+app.run(function($ionicPlatform,$cordovaSQLite) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
